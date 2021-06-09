@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3D7B0D29-5E2C-4B0C-A2BE-072CC33C9893}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ModelTakipUygulamasi</RootNamespace>
+    <AssemblyName>ModelTakipUygulamasi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v19.2.UI, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v19.2, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Snap.v19.2, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Snap.v19.2.Core, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Snap.v19.2.Extensions, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.UI, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.Wizard, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v19.2, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v19.2, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anasayfa.Designer.cs">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="anasayfa2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anasayfa2.Designer.cs">
+      <DependentUpon>anasayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DikimBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DikimBilgileri.Designer.cs">
+      <DependentUpon>DikimBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dikimVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dikimVideo.Designer.cs">
+      <DependentUpon>dikimVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fason Grafik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fason Grafik.Designer.cs">
+      <DependentUpon>Fason Grafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FasonTakip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FasonTakip.Designer.cs">
+      <DependentUpon>FasonTakip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fason_İslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fason_İslemleri.Designer.cs">
+      <DependentUpon>Fason_İslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KonfeksiyonBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KonfeksiyonBilgileri.Designer.cs">
+      <DependentUpon>KonfeksiyonBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="malzemeBilgiListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="malzemeBilgiListele.Designer.cs">
+      <DependentUpon>malzemeBilgiListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="malzemeEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="malzemeEkle.Designer.cs">
+      <DependentUpon>malzemeEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modelEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modelEkle.Designer.cs">
+      <DependentUpon>modelEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Numune.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Numune.Designer.cs">
+      <DependentUpon>Numune.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Numuneİslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Numuneİslemleri.Designer.cs">
+      <DependentUpon>Numuneİslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ormeDokuma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ormeDokuma.Designer.cs">
+      <DependentUpon>ormeDokuma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParolaUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParolaUnuttum.Designer.cs">
+      <DependentUpon>ParolaUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sevkiyat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sevkiyat.Designer.cs">
+      <DependentUpon>sevkiyat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StokTakip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokTakip.Designer.cs">
+      <DependentUpon>StokTakip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TekstilTakipDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TekstilTakipDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TekstilTakipOtomasyonuDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TekstilTakipOtomasyonuDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="utupaketBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="utupaketBilgileri.Designer.cs">
+      <DependentUpon>utupaketBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="utupaketKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="utupaketKayit.Designer.cs">
+      <DependentUpon>utupaketKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="utuVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="utuVideo.Designer.cs">
+      <DependentUpon>utuVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YuvarlakButon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Anasayfa.resx">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="anasayfa2.resx">
+      <DependentUpon>anasayfa2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DikimBilgileri.resx">
+      <DependentUpon>DikimBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dikimVideo.resx">
+      <DependentUpon>dikimVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fason Grafik.resx">
+      <DependentUpon>Fason Grafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FasonTakip.resx">
+      <DependentUpon>FasonTakip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fason_İslemleri.resx">
+      <DependentUpon>Fason_İslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KonfeksiyonBilgileri.resx">
+      <DependentUpon>KonfeksiyonBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="malzemeBilgiListele.resx">
+      <DependentUpon>malzemeBilgiListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="malzemeEkle.resx">
+      <DependentUpon>malzemeEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modelEkle.resx">
+      <DependentUpon>modelEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Numune.resx">
+      <DependentUpon>Numune.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Numuneİslemleri.resx">
+      <DependentUpon>Numuneİslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ormeDokuma.resx">
+      <DependentUpon>ormeDokuma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParolaUnuttum.resx">
+      <DependentUpon>ParolaUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="sevkiyat.resx">
+      <DependentUpon>sevkiyat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StokTakip.resx">
+      <DependentUpon>StokTakip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="utupaketBilgileri.resx">
+      <DependentUpon>utupaketBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="utupaketKayit.resx">
+      <DependentUpon>utupaketKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="utuVideo.resx">
+      <DependentUpon>utuVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TekstilTakipDataSet.xsc">
+      <DependentUpon>TekstilTakipDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TekstilTakipDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TekstilTakipDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TekstilTakipDataSet.xss">
+      <DependentUpon>TekstilTakipDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TekstilTakipOtomasyonuDataSet.xsc">
+      <DependentUpon>TekstilTakipOtomasyonuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TekstilTakipOtomasyonuDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TekstilTakipOtomasyonuDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TekstilTakipOtomasyonuDataSet.xss">
+      <DependentUpon>TekstilTakipOtomasyonuDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20170622_201913.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20170622_2019131.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_6218.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-01-25 at 16.17.44.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
